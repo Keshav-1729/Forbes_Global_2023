@@ -25,19 +25,6 @@ bright_palette = ["#FF875D", "#FFB386", "#FFE7C2", "#8BD2C1", "#B8C8E3", "#D8C2E
 
 sns.set_palette(bright_palette)
 
-data = [
-    {"country": "United States", "companies": 610},
-    {"country": "China", "companies": 302},
-    {"country": "Japan", "companies": 192},
-    {"country": "United Kingdom", "companies": 67},
-    {"country": "South Korea", "companies": 59},
-    {"country": "Canada", "companies": 57},
-    {"country": "India", "companies": 55},
-    {"country": "Germany", "companies": 53},
-    {"country": "France", "companies": 52},
-    {"country": "Taiwan", "companies": 45},
-]
-
 df=pd.read_csv('Forbes 23.csv')
 df1=pd.read_csv('longitude-latitude.csv')
 country_counts = df['Country'].value_counts()
@@ -143,7 +130,7 @@ if choice=='Data Distribution':
 - The distribution suggests that high profitability is not common across the board, and only a few companies achieve extraordinary profit margins, potentially due to market leadership, monopolistic advantages, or high operational efficiency.""")
         stoggle(
         "Click for more info",
-        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
+        """Outliers are data points significantly distant from the main body of the data, like lone wolves in a pack. Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
     elif chart2=='Market Value':
         st.image("market_dist.png")
         st.write("""**Insight Driven:**
@@ -151,7 +138,7 @@ if choice=='Data Distribution':
 - This skewness towards lower market values suggests that while a small number of firms achieve exceptional market capitalization, most companies have a more modest valuation, consistent with typical market dynamics where a select few companies dominate their respective industries. """)
         stoggle(
         "Click for more info",
-        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
+        """Outliers are data points significantly distant from the main body of the data, like lone wolves in a pack. Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
 
     elif chart2=='Assets':
         st.image("assets_dist.png")
@@ -159,14 +146,14 @@ if choice=='Data Distribution':
 - The histogram illustrates the distribution of assets among the Forbes Global 2000 companies for 2023, showcasing a highly right-skewed distribution. This suggests that while a majority of companies hold a relatively smaller amount of assets, a few companies have significantly larger asset bases, likely reflecting the capital-intensive nature of certain industries like banking and oil, where companies often possess high-value physical and financial assets.""")
         stoggle(
         "Click for more info",
-        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
+        """Outliers are data points significantly distant from the main body of the data, like lone wolves in a pack. Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
     elif chart2=='Sales':
         st.image("sales_dist.png")
         st.write("""**Insight Driven:**
 - The skewness indicates that high-volume sales are not common and are likely driven by industry leaders or companies with a large market share in sectors such as retail, energy, or technology, which can scale sales globally.""")
         stoggle(
         "Click for more info",
-        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
+        """Outliers are data points significantly distant from the main body of the data, like lone wolves in a pack. Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
     
 if choice=='Geo-Analysis':
     fig = px.choropleth(df3, locations="ISO-ALPHA-3",
@@ -188,6 +175,9 @@ if choice=='Geo-Analysis':
 - **Germany**: 53 companies
 - **France**: 52 companies
 - **Taiwan**: 45 companies""")
+    stoggle(
+        "Click for more info",
+        """ISO-ALPHA-3 is a three-letter country code standard defined in ISO 3166-1 alpha-3, part of the ISO 3166 international standard for country codes.""")
 
 
 st.write("---")
