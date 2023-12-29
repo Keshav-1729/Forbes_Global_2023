@@ -82,7 +82,7 @@ u1,u2=st.columns(2)
 
 with u1:
     st.markdown("## Tech stack used:")
-    st.write("Streamlit cloud :cloud:, Python :snake:, Jupyter Notebook :notebook: and Github :black_cat: ")
+    st.write("Streamlit cloud :cloud: Python :snake: Jupyter Notebook :notebook: Github :black_cat: ")
 
 with u2:
     st.markdown("## Python Libraries used:")
