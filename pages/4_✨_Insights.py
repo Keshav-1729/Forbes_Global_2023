@@ -141,23 +141,33 @@ if choice=='Data Distribution':
         st.write("""**Insight Driven:**
 -  The distribution shows a pronounced peak close to zero with a long right tail, indicating that while most companies have relatively low profits, there are outliers with exceptionally high profits.
 - The distribution suggests that high profitability is not common across the board, and only a few companies achieve extraordinary profit margins, potentially due to market leadership, monopolistic advantages, or high operational efficiency.""")
+        stoggle(
+        "Click for more info",
+        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
     elif chart2=='Market Value':
         st.image("market_dist.png")
         st.write("""**Insight Driven:**
 - indicating a right-skewed distribution where the vast majority of companies have a lower market value, with a few outliers possessing significantly higher valuations. 
 - This skewness towards lower market values suggests that while a small number of firms achieve exceptional market capitalization, most companies have a more modest valuation, consistent with typical market dynamics where a select few companies dominate their respective industries. """)
+        stoggle(
+        "Click for more info",
+        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
 
     elif chart2=='Assets':
         st.image("assets_dist.png")
         st.write("""**Insight Driven:**
 - The histogram illustrates the distribution of assets among the Forbes Global 2000 companies for 2023, showcasing a highly right-skewed distribution. This suggests that while a majority of companies hold a relatively smaller amount of assets, a few companies have significantly larger asset bases, likely reflecting the capital-intensive nature of certain industries like banking and oil, where companies often possess high-value physical and financial assets.""")
+        stoggle(
+        "Click for more info",
+        """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
     elif chart2=='Sales':
         st.image("sales_dist.png")
         st.write("""**Insight Driven:**
 - The skewness indicates that high-volume sales are not common and are likely driven by industry leaders or companies with a large market share in sectors such as retail, energy, or technology, which can scale sales globally.""")
-    stoggle(
+        stoggle(
         "Click for more info",
         """Mean-3*(Standard Deviation) and Mean+3*(Standard Deviation) marks that the data beyond this is termed as Outlier.""")
+    
 if choice=='Geo-Analysis':
     fig = px.choropleth(df3, locations="ISO-ALPHA-3",
                     color="No. of Companies", 
