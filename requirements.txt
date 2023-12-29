@@ -6,3 +6,4 @@ streamlit==1.23.1
 streamlit_card==0.0.5
 streamlit_extras==0.3.6
 streamlit_lottie==0.0.5
+plotly==5.15.0
