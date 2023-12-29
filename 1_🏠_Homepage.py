@@ -86,4 +86,4 @@ with u1:
 
 with u2:
     st.markdown("## Python Libraries used:")
-    st.write("Numpy, Pandas, Seaborn, Plotly, streamlit, streamlit_extras")
+    st.write("Numpy, Pandas, Seaborn, Plotly, streamlit & streamlit_extras")
