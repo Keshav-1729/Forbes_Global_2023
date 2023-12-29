@@ -72,8 +72,8 @@ st.write("---")
 
 l4,r4=st.columns(2)
 with l4:
-    st.markdown("# The final Web Application!:computer:")
-    st.write("Performing all the above steps in sequence and using the required Dependencies, we made it to the final Product ready for the deployment.")
+    st.markdown("# Web Application and its Deployment :computer:")
+    st.write("Performing all the above steps in sequence and using the required Dependencies, we made it to the final Product ready for the deployment on **streamlit cloud**.")
 with r4:
     st_lottie(lottie_coding4,height=300,key="insights3")
 st.write("---")
