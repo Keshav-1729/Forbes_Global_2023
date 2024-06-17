@@ -59,8 +59,8 @@ To run the web application locally, follow these steps:
 
 1. Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/yourusername/forbes-global-2000-eda.git
-    cd forbes-global-2000-eda
+    git clone https://github.com/Keshav-1729/Forbes_Global_2023.git
+    cd Forbes_Global_2023
     ```
 
 2. Install the required dependencies:
@@ -73,9 +73,9 @@ To run the web application locally, follow these steps:
     streamlit run app.py
     ```
 
-4. Access the app in your web browser at `http://localhost:8501`.
 
-To access the deployed web application, visit the URL provided by Streamlit Cloud.
+To access the deployed web application, visit the URL provided by Streamlit Cloud:
+https://sigma-forbes-analysis-2023.streamlit.app/
 
 ## License
 
